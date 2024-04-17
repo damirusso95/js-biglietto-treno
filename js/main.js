@@ -1,6 +1,8 @@
 // tariffa base km
- x = 0.21
- percentualeVenti = 20
+  const x = 0.21
+// costante percentuali
+  const percentualeVenti = 20
+  const percentualeQuaranta = 40
 //  chiedo la distanza
  let km = prompt("Inserire la distanza in km");
  console.log(km)
@@ -17,8 +19,14 @@
  alert( tariffa - sconto)
  console.log(sconto);
 
- } else if{
-    
+ } 
+ // se il passeggero è senior
+ else if(anno >65) {
+    let sconto = (km * x) * (percentualeQuaranta) / 100;
+ 
+    alert( tariffa - sconto)
+ console.log(sconto);
+
  }
 
  
