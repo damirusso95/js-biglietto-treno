@@ -16,7 +16,7 @@
  if(anno <18){
  let sconto = (km * x) * (percentualeVenti) / 100;
  
- alert( tariffa - sconto)
+ alert( tariffa - sconto);
  console.log(sconto);
 
  } 
@@ -25,9 +25,15 @@
     let sconto = (km * x) * (percentualeQuaranta) / 100;
  
     alert( tariffa - sconto)
- console.log(sconto);
+    console.log(sconto);
 
  }
+//  casi restanti
+else if (anno>18&&anno<65)  {
+    let tariffa = (km * x);
+    alert(tariffa);
+    console.log(tariffa);
+}
 
  
 
