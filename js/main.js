@@ -16,7 +16,7 @@
  if(anno <18){
  let sconto = (km * x) * (percentualeVenti) / 100;
  
- alert( tariffa - sconto);
+ alert("il prezzo del biglietto è:" + (tariffa - sconto) +"€");
  console.log(sconto);
 
  } 
@@ -24,15 +24,15 @@
  else if(anno >65) {
     let sconto = (km * x) * (percentualeQuaranta) / 100;
  
-    alert( tariffa - sconto)
+    alert("il prezzo del biglietto è:" + (tariffa - sconto) +"€")
     console.log(sconto);
 
  }
 //  casi restanti
 else if (anno>18&&anno<65)  {
     let tariffa = (km * x);
-    alert(tariffa);
-    console.log(tariffa);
+    alert("il prezzo del biglietto è:" + tariffa +"€");
+    console.log("il prezzo del biglietto è:" + tariffa);
 }
 
  
